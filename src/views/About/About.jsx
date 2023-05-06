@@ -23,7 +23,7 @@ function About() {
         </div>
         <div  className="right-content">
         <h2>Hy! There, 👋</h2>
-        <p>My name is Anukalp Mishra and I am a full-stack web developer with 1+ years of experience with modern technologies like React js, Node js, Express JS, Next js, Mongo DB etc.. </p>
+        <p>My name is Anukalp Mishra and I am a passionate Front-end React Developer with 1+ years of experience with modern technologies like React js, Node js, Express JS, Next js, Mongo DB etc.. </p>
         <a href="https://www.linkedin.com/in/anukalpmishra/" target="_blank" rel="noopener noreferrer">Hire me</a>
         </div>
       </div>

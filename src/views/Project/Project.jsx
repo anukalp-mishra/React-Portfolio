@@ -26,9 +26,9 @@ function Project() {
       <div data-aos = "fade-up">
         <div className="boxes">
           <div className="carousel owl-carousel">
-            <ProjectBox title = "Time table management system" img= {img7} link = "https://github.com/anukalp-mishra/Timetable-management-system"  />
-            <ProjectBox title = "Portfolio Website" img= {img5} link = ""  />
             <ProjectBox title = "Expense Tracker" img= {img3} link = "https://github.com/anukalp-mishra/Expense_Tracker"  />
+            <ProjectBox title = "Portfolio Website" img= {img5} link = ""  />
+            <ProjectBox title = "Time table management system" img= {img7} link = "https://github.com/anukalp-mishra/Timetable-management-system"  />
             <ProjectBox title = "Resume Screening" img= {img4} link = "https://github.com/anukalp-mishra/Resume-Screening"  />
             <ProjectBox title = "Book Library" img= {img1} link = "https://github.com/anukalp-mishra/BookMart"  />
             <ProjectBox title = "Online Exam System" img= {img2} link = "https://github.com/OnlineExamSystem7/Online-Exam-System"  />
