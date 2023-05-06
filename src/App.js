@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import PulseLoader from "react-spinners/PulseLoader";
+
+import Navbar from './components/Navbar/Navbar'
+import Home from "./views/Home/Home"
+import About from "./views/About/About"
+import Service from "./views/Service/Service"
+import Project from './views/Project/Project';
+import Contact from "./views/Contact/Contact"
+import Footer from './components/Footer/Footer'
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>     
+    <div className='body'>      
+      <div id="loading_start" className='loading_start_none'>
+        <p>Loading</p>
+        <PulseLoader color={"#05e6ee"} size={12} />
+      </div>
+      <Navbar/>
+      <Home/>
+      <About/>
+      <Service/>
+      <Project/>
+      <Contact/>
+      <Footer/>
+    </div> 
+    </>
   );
 }
-
 export default App;

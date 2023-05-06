@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --aqua: #05e6ee;
+    --aqua-low:#60aeb0;
+    --white : #ffffff;
+    --black-low: #0d1321;
+    --black-high: #141724;
+    --black-body:#050b17;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    overflow-x: hidden;
+    background: var(--black-body) ;
+    -webkit-tap-highlight-color: transparent;
+}
+.body{
+    max-width: 1400px;
+}
+#loading_start{
+    background:var(--black-body) ;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 0 0;
+    margin: 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#loading_start p{
+    font-size: 2rem;
+    color: var(--aqua);
+    padding-right: 1rem;
+    position: relative;
+    top: -5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 280px) {
+    html{
+        overflow-x: scroll;
+    }
+    body{
+        overflow-x: scroll;
+    }
+    .body{
+        min-width: 300px;
+    }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
