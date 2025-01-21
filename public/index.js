@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     // typing animation 
     var typed = new Typed(".typing",{
-      strings: ["Developer", "Designer","Programmer","Blogger"],
+      strings: ["Developer","Programmer","Blogger"],
       typeSpeed: 100,
       backSpeed: 60,
       loop:true
