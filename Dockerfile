@@ -9,12 +9,11 @@ RUN npm install
 COPY . ./
 RUN npm run build
 
-# Stage 2: Serve the React app with a distroless image
-FROM gcr.io/distroless/nodejs18
+# Stage 2: Serve the React app with nginx
+FROM nginx:alpine
 
-WORKDIR /app
+COPY --from=build /app/build /usr/share/nginx/html
 
-COPY --from=build /app/build /app/build
+EXPOSE 80
 
-EXPOSE 3000
-CMD ["node", "server.js"]
+CMD ["nginx", "-g", "daemon off;"]
