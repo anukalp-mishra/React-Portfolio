@@ -15,12 +15,12 @@
     "react-spinners": "^0.13.8",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-  "start": "HOST=0.0.0.0 PORT=80 react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
+ "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
