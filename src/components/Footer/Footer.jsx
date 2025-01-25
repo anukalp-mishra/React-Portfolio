@@ -6,7 +6,15 @@ function Footer() {
     const script = document.createElement('script');
     script.src = "https://counter6.optistats.ovh/private/counter.js?c=l3tpwwhrdhbw31xfxa7rnhnhhbhdze62&down=async";
     script.async = true;
-    script.onload = () => console.log("Visitor counter script loaded successfully.");
+    script.onload = () => {
+      console.log("Visitor counter script loaded successfully.");
+      const counterDiv = document.getElementById('sfcl3tpwwhrdhbw31xfxa7rnhnhhbhdze62');
+      if (counterDiv) {
+        console.log("Counter div found:", counterDiv);
+      } else {
+        console.error("Counter div not found.");
+      }
+    };
     script.onerror = () => console.error("Error loading visitor counter script.");
     document.getElementById('sfcl3tpwwhrdhbw31xfxa7rnhnhhbhdze62').appendChild(script);
   }, []);
@@ -27,7 +35,6 @@ function Footer() {
         </div>
         {/* Visitor Counter */}
         <div id="sfcl3tpwwhrdhbw31xfxa7rnhnhhbhdze62" style={{ border: '1px solid red', minHeight: '50px' }}></div>
-        <div id="sfcl3tpwwhrdhbw31xfxa7rnhnhhbhdze62"></div>
         <noscript>
           <a href="https://www.freecounterstat.com" title="free counter">
             <img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=l3tpwwhrdhbw31xfxa7rnhnhhbhdze62" border="0" title="free counter" alt="free counter" />
