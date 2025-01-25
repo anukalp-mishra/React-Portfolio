@@ -26,6 +26,7 @@ function Footer() {
           </p>
         </div>
         {/* Visitor Counter */}
+        <div id="sfcl3tpwwhrdhbw31xfxa7rnhnhhbhdze62" style={{ border: '1px solid red', minHeight: '50px' }}></div>
         <div id="sfcl3tpwwhrdhbw31xfxa7rnhnhhbhdze62"></div>
         <noscript>
           <a href="https://www.freecounterstat.com" title="free counter">
