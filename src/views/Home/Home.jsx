@@ -20,7 +20,7 @@ function Home() {
           <p>Hello, My name is</p>
           <h1>Anukalp Mishra</h1>
           <h2>And I'm a  <span className="typing"></span></h2>
-          <a href="https://github.com/anukalp-mishra/React-Portfolio/blob/master/src/images/Anukalp-Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          <a href="https://drive.google.com/drive/folders/1Dqvb_RpswSirnmP-sSAFNLsSVHnru9iI?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
         </div>
         <div className="right-content" data-aos = "fade-up" data-aos-delay= "2000">
           <img src={img8} alt="" />
